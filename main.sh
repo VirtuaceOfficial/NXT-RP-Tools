@@ -26,8 +26,8 @@ TAB4='\t\t\t\t'
 
 ######## MAIN SELECTION MENU FOR EACH CALCULATION VARIANT ########
 
-echo -e ${CYAN}"${TAB4}    NXT PROBABILITY CALCULATOR\n${GREEN}" 
-echo -e ${REVERSE}"${TAB4}\tSELECT AN OPTION:\n${NONE}${RED}${BOLD}"
+echo -e ${CYAN}"${TAB4}      - NXT ROLEPLAY TOOLS -\n${GREEN}" 
+echo -e ${REVERSE}"${TAB4}\t SELECT AN OPTION:\n${NONE}${RED}${BOLD}"
 
 option=("Dumpsters" "Recycling Center" "Treasure Maps" "Weed" "Drug Precursor Harvesting" "Exit")
 
@@ -85,20 +85,24 @@ do
     ;;
 
     "Recycling Center")
-    
+
     ;;
 
     "Treasure Maps")
-    clear
-    echo -e "${TAB3}${BLINK}STARTING TREASURE MAP TRACKER${NONE}"
-    sleep 2
-    clear
-    echo -e "${CYAN}${REVERSE}TREASURE MAP LOOT TRACKER\n${NONE}${GREEN}"
-    sudo python3 python/treasures.py
+        clear
+        echo -e "${TAB3}${BLINK}STARTING TREASURE MAP TRACKER${NONE}"
+        sleep 2
+        
+        clear
+        echo -e "${CYAN}${REVERSE}TREASURE MAP LOOT TRACKER\n${NONE}${GREEN}"
+        sudo python3 python/treasures.py
     ;;
 
     "Weed")
-    #### TO BE FILLED IN ####
+    clear
+    echo -e "${GREEN}STARTING WEED SALES TRACKER\n"
+    sleep 1
+    python3 python/weed.py
     ;;
 
     "Drug Precursor Harvesting")
